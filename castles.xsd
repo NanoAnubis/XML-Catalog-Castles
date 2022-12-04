@@ -3,7 +3,6 @@
   targetNamespace="https://www.castles-catalog.com/"
   xmlns="https://www.castles-catalog.com/"
   elementFormDefault="qualified">
-<!-- targetNamespace and xmlns should be changed -->
 
 <xs:element name="castle_catalog">
   <xs:complexType>
@@ -96,11 +95,11 @@
 <xs:element name="condition">
   <xs:simpleType>
       <xs:restriction base="xs:string">
-        <xs:enumeration value="1" />
-        <xs:enumeration value="2" />
-        <xs:enumeration value="3" />
-        <xs:enumeration value="4" />
-        <xs:enumeration value="5" />
+        <xs:enumeration value="Запазена" />
+        <xs:enumeration value="Частично запазена" />
+        <xs:enumeration value="Реставрирана" />
+        <xs:enumeration value="Частично реставрирана" />
+        <xs:enumeration value="Разрушена" />
       </xs:restriction>
   </xs:simpleType>
 </xs:element>
