@@ -1,28 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="./castles.xsd">
+<castle_catalog
+  xmlns="https://www.castles-catalog.com/"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="./castles.xsd">
 
-  <rgs:regions xmlns:rgs="www.castles-catalog/regions">
+  <rgs:regions xmlns:rgs="https://www.castles-catalog.com/regions">
     <rgs:region>
-      <rgs:name></rgs:name>
-      <rgs:id_region></rgs:id_region>
+      <rgs:name>Северна България</rgs:name>
+      <rgs:id_region>N</rgs:id_region>
+    </rgs:region>
+    <rgs:region>
+      <rgs:name>Североизточна България</rgs:name>
+      <rgs:id_region>NE</rgs:id_region>
+    </rgs:region>
+    <rgs:region>
+      <rgs:name>Източна България</rgs:name>
+      <rgs:id_region>E</rgs:id_region>
+    </rgs:region>
+    <rgs:region>
+      <rgs:name>Югоизточна България</rgs:name>
+      <rgs:id_region>SE</rgs:id_region>
+    </rgs:region>
+    <rgs:region>
+      <rgs:name>Южна България</rgs:name>
+      <rgs:id_region>S</rgs:id_region>
+    </rgs:region>
+    <rgs:region>
+      <rgs:name>Югозападна България</rgs:name>
+      <rgs:id_region>SW</rgs:id_region>
+    </rgs:region>
+    <rgs:region>
+      <rgs:name>Западна България</rgs:name>
+      <rgs:id_region>W</rgs:id_region>
+    </rgs:region>
+    <rgs:region>
+      <rgs:name>Северозападна България</rgs:name>
+      <rgs:id_region>NW</rgs:id_region>
     </rgs:region>
   </rgs:regions>
 
-  <tps:types xmlns:tps="www.castles-catalog/types">
+  <tps:types xmlns:tps="https://www.castles-catalog.com/types">
     <tps:type>
-      <tps:name></tps:name>
-      <tps:id_type></tps:id_type>
+      <tps:name>Българска</tps:name>
+      <tps:id_type>T1</tps:id_type>
     </tps:type>
   </tps:types>
 
-  <cstls:castles xmlns:cstls="www.castles-catalog/castles">
-    <cstls:castle>
-      <cstls:title></cstls:title>
-      <cstls:region id=""></cstls:region>
-      <cstls:type id=""></cstls:type>
-      <cstls:condition></cstls:condition>
-      <cstls:description></cstls:description>
-      <cstls:image href=""></cstls:image>
-    </cstls:castle>
-  </cstls:castles>
-</catalog>
+  <castles>
+    <castle>
+      <title>Асенова крепост</title>
+      <region>S</region>
+      <type id="T1"/>
+      <condition>Запазена</condition>
+      <description>
+        Крепостта е съществувала още по времето на траките, преустроена е от Византия през IX век, за да охранява вратата на Беломорския проход и да осигури византийската граница в този край. Първите писмени сведения за крепостта са от XI век и са получени от устава на тогава построения Бачковски манастир. От тези сведения се вижда, че Асеновата крепост е притежавала собствена охрана и администрация. Превземана е от кръстоносците по времето на Четвъртия кръстоносен поход. Крепостта съществува до 1410 г., когато е разрушена от османски войски.
+      </description>
+      <image href=""/>
+    </castle>
+  </castles>
+</castle_catalog>
