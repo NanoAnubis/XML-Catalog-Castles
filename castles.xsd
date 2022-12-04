@@ -42,8 +42,8 @@
 <xs:element name="region">
   <xs:complexType>
     <xs:sequence>
-      <xs:element ref="name"/>
-      <xs:element ref="id_region"/>
+      <xs:element name="name" equivClass="string-data"/>
+      <xs:element element="id" type="id_region"/>
     </xs:sequence>
   </xs:complexType>
 </xs:element>
@@ -51,34 +51,66 @@
 <xs:element name="type">
   <xs:complexType>
     <xs:sequence>
-      <xs:element ref="name"/>
-      <xs:element ref="id_type"/>
+      <xs:element name="name" equivClass="string-data"/>
+      <xs:element element="id" type="id_type"/>
     </xs:sequence>
   </xs:complexType>
 </xs:element>
 
-<xs:element name="name" type="xs:string">
+<xs:element name="string-data" type="xs:string" abstract="true"/>
 
-<xs:element name="id_type">
-  <xs:simpleType>
-    <xs:restriction base="xs:string">
-      <xs:pattern value="T[1-9]"/>
-  </xs:simpleType>
-</xs:element>
+<xs:simpleType name="id_type">
+  <xs:restriction base="xs:string">
+    <xs:pattern value="T[1-9]"/>
+  </xs:restriction>
+</xs:simpleType>
 
-<xs:element name="id_region">
-  <xs:simpleType>
-    <xs:restriction base="xs:string">
-      <xs:pattern value="[A-Z]{2}"/>
-  </xs:simpleType>
-</xs:element>
+<xs:simpleType name="id_region">
+  <xs:restriction base="xs:string">
+    <xs:pattern value="[A-Z]{2}"/>
+  </xs:restriction>
+</xs:simpleType>
 
 <xs:element name="castle">
   <xs:complexType>
     <xs:sequence>
-
+      <xs:element name="title" equivClass="string-data"/>
+      <xs:element name="region" type="id_region"/>
+      <xs:element name="type" type="type_castle"/>
+      <xs:element ref="condition"/>
+      <xs:element name="description" equivClass="string-data"/>
+      <xs:element ref="image"/>
     </xs:sequence>
+    <xs:attribute name="id" type="id_castle" use="required"/>
   </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="id_castle">
+  <xs:restriction base="xs:string">
+    <xs:pattern value="C[1-9]"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="type_castle" content="empty">
+  <xs:attribute name="id" type="id_type" use="required"/>
+</xs:simpleType>
+
+<xs:element name="condition">
+  <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="1" />
+        <xs:enumeration value="2" />
+        <xs:enumeration value="3" />
+        <xs:enumeration value="4" />
+        <xs:enumeration value="5" />
+      </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+<xs:element name="image">
+  <xs:simpleType content="empty">
+    <xs:attribute name="href" type="xs:ENTITY" use="required"/>
+  </xs:simpleType>
 </xs:element>
 
 
