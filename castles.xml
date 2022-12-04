@@ -17,65 +17,65 @@
 
   <regions>
     <region>
-      <name>Централна България</name>
-      <id>CT</id>
+      <region_name>Централна България</region_name>
+      <region_id>CT</region_id>
     </region>
 
     <region>
-      <name>Северна България</name>
-      <id>N</id>
+      <region_name>Северна България</region_name>
+      <region_id>N</region_id>
     </region>
 
     <region>
-      <name>Североизточна България</name>
-      <id>NE</id>
+      <region_name>Североизточна България</region_name>
+      <region_id>NE</region_id>
     </region>
 
     <region>
-      <name>Източна България</name>
-      <id>E</id>
+      <region_name>Източна България</region_name>
+      <region_id>E</region_id>
     </region>
 
     <region>
-      <name>Югоизточна България</name>
-      <id>SE</id>
+      <region_name>Югоизточна България</region_name>
+      <region_id>SE</region_id>
     </region>
 
     <region>
-      <name>Южна България</name>
-      <id>S</id>
+      <region_name>Южна България</region_name>
+      <region_id>S</region_id>
     </region>
 
     <region>
-      <name>Югозападна България</name>
-      <id>SW</id>
+      <region_name>Югозападна България</region_name>
+      <region_id>SW</region_id>
     </region>
 
     <region>
-      <name>Западна България</name>
-      <id>W</id>
+      <region_name>Западна България</region_name>
+      <region_id>W</region_id>
     </region>
 
     <region>
-      <name>Северозападна България</name>
-      <id>NW</id>
+      <region_name>Северозападна България</region_name>
+      <region_id>NW</region_id>
     </region>
   </regions>
 
   <types>
     <type>
-      <name>Българска</name>
-      <id>T1</id>
+      <type_name>Българска</type_name>
+      <type_id>T1</type_id>
     </type>
 
     <type>
-      <name>Римска</name>
-      <id>T2</id>
+      <type_name>Римска</type_name>
+      <type_id>T2</type_id>
     </type>
 
     <type>
-      <name>Тракийска</name>
-      <id>T3</id>
+      <type_name>Тракийска</type_name>
+      <type_id>T3</type_id>
     </type>
   </types>
 

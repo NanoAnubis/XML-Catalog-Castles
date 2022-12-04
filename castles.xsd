@@ -19,8 +19,9 @@
 
   <xs:key name="key_type">
     <xs:selector xpath="types/type"/>
-    <xs:field xpath="id"/>
+    <xs:field xpath="type_id"/>
   </xs:key>
+
   <xs:keyref name="ref_type" refer="key_type">
     <xs:selector xpath="castles/castle"/>
     <xs:field xpath="type/@id" />
@@ -28,14 +29,14 @@
 
   <xs:key name="key_region">
     <xs:selector xpath="regions/region"/>
-    <xs:field xpath="id"/>
+    <xs:field xpath="region_id"/>
   </xs:key>
-  
+
   <xs:keyref name="ref_region" refer="key_region">
     <xs:selector xpath="castles/castle"/>
     <xs:field xpath="region"/>
   </xs:keyref>
-  
+
 </xs:element>
 
 <xs:element name="regions">
@@ -65,17 +66,23 @@
 <xs:element name="region">
   <xs:complexType>
     <xs:sequence>
-      <xs:element name="name" type="xs:string"/>
-      <xs:element name="id" type="id_region"/>
+      <xs:element name="region_name" type="xs:string"/>
+      <xs:element name="region_id" type="id_region"/>
     </xs:sequence>
   </xs:complexType>
 </xs:element>
 
+<xs:simpleType name="id_region">
+  <xs:restriction base="xs:string">
+    <xs:pattern value="[A-Z]{1,2}"/>
+  </xs:restriction>
+</xs:simpleType>
+
 <xs:element name="type">
   <xs:complexType>
     <xs:sequence>
-      <xs:element name="name" type="xs:string"/>
-      <xs:element name="id" type="id_type"/>
+      <xs:element name="type_name" type="xs:string"/>
+      <xs:element name="type_id" type="id_type"/>
     </xs:sequence>
   </xs:complexType>
 </xs:element>
@@ -83,12 +90,6 @@
 <xs:simpleType name="id_type">
   <xs:restriction base="xs:string">
     <xs:pattern value="T[1-9]"/>
-  </xs:restriction>
-</xs:simpleType>
-
-<xs:simpleType name="id_region">
-  <xs:restriction base="xs:string">
-    <xs:pattern value="[A-Z]{1,2}"/>
   </xs:restriction>
 </xs:simpleType>
 
