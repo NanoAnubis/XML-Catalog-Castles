@@ -1,1 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.w3schools.com"
+			xmlns="http://www.w3schools.com"
+			elementFormDefault="qualified">
+<!-- targetNamespace and xmlns should be changed -->
+
+<xs:element name="castle_catalog">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="regions" />
+      <xs:element ref="types"/>
+      <xs:element ref="castles"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="regions">
+</xs:element>
+
+<xs:element name="types">
+</xs:element>
+
+<xs:element name="castles">
+</xs:element>
+
+</xs:schema>
