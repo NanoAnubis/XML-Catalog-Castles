@@ -4,6 +4,17 @@
   xmlns="https://www.castles-catalog.com/"
   elementFormDefault="qualified">
 
+
+
+
+<xs:unique name="castleUnique">
+  <xs:selector xpath="castle"/>
+  <xs:field xpath="title"/>
+  <xs:field xpath="region"/>
+  <xs:field xpath="type/@id"/>
+</xs:unique>
+
+
 <xs:element name="castle_catalog">
   <xs:complexType>
     <xs:sequence>
