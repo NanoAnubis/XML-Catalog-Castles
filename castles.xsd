@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-  targetNamespace="https://www.castles-catalog.com"
-  xmlns="https://www.castles-catalog.com"
+  targetNamespace="https://www.castles-catalog.com/"
+  xmlns="https://www.castles-catalog.com/"
   elementFormDefault="qualified">
-<!-- targetNamespace and xmlns should be changed -->
 
 <xs:element name="castle_catalog">
   <xs:complexType>
@@ -65,7 +64,7 @@
 
 <xs:simpleType name="id_region">
   <xs:restriction base="xs:string">
-    <xs:pattern value="[A-Z]{2}"/>
+    <xs:pattern value="[A-Z]{1,2}"/>
   </xs:restriction>
 </xs:simpleType>
 
@@ -96,11 +95,11 @@
 <xs:element name="condition">
   <xs:simpleType>
       <xs:restriction base="xs:string">
-        <xs:enumeration value="1" />
-        <xs:enumeration value="2" />
-        <xs:enumeration value="3" />
-        <xs:enumeration value="4" />
-        <xs:enumeration value="5" />
+        <xs:enumeration value="Запазена" />
+        <xs:enumeration value="Частично запазена" />
+        <xs:enumeration value="Реставрирана" />
+        <xs:enumeration value="Частично реставрирана" />
+        <xs:enumeration value="Разрушена" />
       </xs:restriction>
   </xs:simpleType>
 </xs:element>
