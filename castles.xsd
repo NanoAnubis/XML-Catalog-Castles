@@ -25,6 +25,24 @@
       <xs:element ref="castles" maxOccurs="1"/>
     </xs:sequence>
   </xs:complexType>
+
+  <xs:key name="key_type">
+    <xs:selector xpath=".//type"/>
+    <xs:field xpath="id"/>
+  </xs:key>
+  <xs:keyref name="ref_type" refer="key_type">
+    <xs:selector xpath=".//castle" />
+    <xs:field xpath="type/@id" />
+  </xs:keyref>
+
+  <xs:key name="key_region">
+    <xs:selector xpath=".//region"/>
+    <xs:field xpath="id"/>
+  </xs:key>
+  <xs:keyref name="ref_region" refer="key_region">
+    <xs:selector xpath=".//castle"/>
+    <xs:field xpath="region"/>
+  </xs:keyref>
 </xs:element>
 
 <xs:element name="regions">
