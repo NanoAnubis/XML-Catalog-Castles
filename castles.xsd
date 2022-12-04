@@ -8,20 +8,41 @@
 <xs:element name="castle_catalog">
   <xs:complexType>
     <xs:sequence>
-      <xs:element ref="regions" />
-      <xs:element ref="types"/>
-      <xs:element ref="castles"/>
+      <xs:element ref="regions" maxOccurs="1"/>
+      <xs:element ref="types" maxOccurs="1"/>
+      <xs:element ref="castles" maxOccurs="1"/>
     </xs:sequence>
   </xs:complexType>
 </xs:element>
 
 <xs:element name="regions">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="region" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
 </xs:element>
 
 <xs:element name="types">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="type" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
 </xs:element>
 
 <xs:element name="castles">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="castle" minOccurs="7" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
 </xs:element>
+
+
+
+
+
+
 
 </xs:schema>
