@@ -43,7 +43,7 @@
   <xs:complexType>
     <xs:sequence>
       <xs:element name="name" equivClass="string-data"/>
-      <xs:element element="id" type="id_region"/>
+      <xs:element name="id" type="id_region"/>
     </xs:sequence>
   </xs:complexType>
 </xs:element>
@@ -52,7 +52,7 @@
   <xs:complexType>
     <xs:sequence>
       <xs:element name="name" equivClass="string-data"/>
-      <xs:element element="id" type="id_type"/>
+      <xs:element name="id" type="id_type"/>
     </xs:sequence>
   </xs:complexType>
 </xs:element>
@@ -91,9 +91,9 @@
   </xs:restriction>
 </xs:simpleType>
 
-<xs:simpleType name="type_castle" content="empty">
+<xs:complexType name="type_castle">
   <xs:attribute name="id" type="id_type" use="required"/>
-</xs:simpleType>
+</xs:complexType>
 
 <xs:element name="condition">
   <xs:simpleType>
@@ -108,9 +108,9 @@
 </xs:element>
 
 <xs:element name="image">
-  <xs:simpleType content="empty">
+  <xs:complexType>
     <xs:attribute name="href" type="xs:ENTITY" use="required"/>
-  </xs:simpleType>
+  </xs:complexType>
 </xs:element>
 
 
