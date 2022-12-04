@@ -39,10 +39,47 @@
   </xs:complexType>
 </xs:element>
 
+<xs:element name="region">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="name"/>
+      <xs:element ref="id_region"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
 
+<xs:element name="type">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="name"/>
+      <xs:element ref="id_type"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
 
+<xs:element name="name" type="xs:string">
 
+<xs:element name="id_type">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="T[1-9]"/>
+  </xs:simpleType>
+</xs:element>
 
+<xs:element name="id_region">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[A-Z]{2}"/>
+  </xs:simpleType>
+</xs:element>
+
+<xs:element name="castle">
+  <xs:complexType>
+    <xs:sequence>
+
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
 
 
 </xs:schema>
