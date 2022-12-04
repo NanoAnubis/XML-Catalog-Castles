@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-  targetNamespace="https://www.castles-catalog.com"
-  xmlns="https://www.castles-catalog.com"
+  targetNamespace="https://www.castles-catalog.com/"
+  xmlns="https://www.castles-catalog.com/"
   elementFormDefault="qualified">
 <!-- targetNamespace and xmlns should be changed -->
 
@@ -65,7 +65,7 @@
 
 <xs:simpleType name="id_region">
   <xs:restriction base="xs:string">
-    <xs:pattern value="[A-Z]{2}"/>
+    <xs:pattern value="[A-Z]{1,2}"/>
   </xs:restriction>
 </xs:simpleType>
 
