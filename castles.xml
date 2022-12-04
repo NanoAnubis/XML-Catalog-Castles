@@ -4,58 +4,103 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="./castles.xsd">
 
-  <rgs:regions xmlns:rgs="https://www.castles-catalog.com/regions">
+  <rgs:regions xmlns:rgs="https://www.castles-catalog.com/">
+    <rgs:region>
+      <rgs:name>Централна България</rgs:name>
+      <rgs:id>CT</rgs:id>
+    </rgs:region>
+
     <rgs:region>
       <rgs:name>Северна България</rgs:name>
-      <rgs:id_region>N</rgs:id_region>
+      <rgs:id>N</rgs:id>
     </rgs:region>
+
     <rgs:region>
       <rgs:name>Североизточна България</rgs:name>
-      <rgs:id_region>NE</rgs:id_region>
+      <rgs:id>NE</rgs:id>
     </rgs:region>
+
     <rgs:region>
       <rgs:name>Източна България</rgs:name>
-      <rgs:id_region>E</rgs:id_region>
+      <rgs:id>E</rgs:id>
     </rgs:region>
+
     <rgs:region>
       <rgs:name>Югоизточна България</rgs:name>
-      <rgs:id_region>SE</rgs:id_region>
+      <rgs:id>SE</rgs:id>
     </rgs:region>
+
     <rgs:region>
       <rgs:name>Южна България</rgs:name>
-      <rgs:id_region>S</rgs:id_region>
+      <rgs:id>S</rgs:id>
     </rgs:region>
+
     <rgs:region>
       <rgs:name>Югозападна България</rgs:name>
-      <rgs:id_region>SW</rgs:id_region>
+      <rgs:id>SW</rgs:id>
     </rgs:region>
+
     <rgs:region>
       <rgs:name>Западна България</rgs:name>
-      <rgs:id_region>W</rgs:id_region>
+      <rgs:id>W</rgs:id>
     </rgs:region>
+
     <rgs:region>
       <rgs:name>Северозападна България</rgs:name>
-      <rgs:id_region>NW</rgs:id_region>
+      <rgs:id>NW</rgs:id>
     </rgs:region>
   </rgs:regions>
 
-  <tps:types xmlns:tps="https://www.castles-catalog.com/types">
+  <tps:types xmlns:tps="https://www.castles-catalog.com/">
     <tps:type>
       <tps:name>Българска</tps:name>
-      <tps:id_type>T1</tps:id_type>
+      <tps:id>T1</tps:id>
     </tps:type>
   </tps:types>
 
   <castles>
     <castle>
-      <title>Асенова крепост</title>
+      <title>Асенова Kрепост</title>
       <region>S</region>
       <type id="T1"/>
       <condition>Запазена</condition>
       <description>
         Крепостта е съществувала още по времето на траките, преустроена е от Византия през IX век, за да охранява вратата на Беломорския проход и да осигури византийската граница в този край. Първите писмени сведения за крепостта са от XI век и са получени от устава на тогава построения Бачковски манастир. От тези сведения се вижда, че Асеновата крепост е притежавала собствена охрана и администрация. Превземана е от кръстоносците по времето на Четвъртия кръстоносен поход. Крепостта съществува до 1410 г., когато е разрушена от османски войски.
       </description>
-      <image href=""/>
+      <image href="./images/асенова-крепост.png"/>
+    </castle>
+
+    <castle>
+      <title>Овеч</title>
+      <region>E</region>
+      <type id="T1"/>
+      <condition>Частично реставрирана</condition>
+      <description>
+        Крепостта е изградена от римляните и функционира от IV в. до началото на VII в., след това близо век не е активна. Обитаването ѝ повторно започва от XI в. и завършва в края на XVII в. Въпреки това преди основаването на крепостта е доказано и тракийско присъствие. Най-голям разцвет обаче претърпява по време на Второто българско царство. Византийците наричат твърдината Проват или Проватон, българите – Овеч, а турците – Таш Хисар (каменна крепост). В историческите хроники от XII в. на арабския пътешественик Ал Идриси крепостта се споменава и с името Бурфанто.
+      </description>
+      <image href="./images/овеч.png"/>
+    </castle>
+
+    <castle>
+      <title>Анево Кале (Копсис)</title>
+      <region>CT</region>
+      <type id="T1"/>
+      <condition>Частично запазена</condition>
+      <description>
+        Аневското кале е средновековна българска крепост, изградена на южния склон на Стара планина. Според писмените извори Аневското кале е изградено в периода на Второто българско царство. Крепостните стени, които са запазени до днес, достигат на височина до 12 – 15 метра. Неговите кули и каменни зидове се забелязват от далеч и привличат като магнит интереса на туристите.
+      </description>
+      <image href="./images/анево-кале.png"/>
+    </castle>
+
+    <castle>
+      <title>Траянови врата</title>
+      <region>SW</region>
+      <type id="T1"/>
+      <condition>Частично запазена</condition>
+      <description>
+        Крепостта датира от 2 век, когато е стояла на границата между Тракия и Македония. Освен, че крепостта е сменила няколко имена, тя е била и защитен пункт по линията Средец – Ниш – Белград от Константинопол. При нея се е водила и една от най-запомнящите се битки между войските на цар Самуил и византийския император Василий Втори.
+      </description>
+      <image href="./images/трянови-врата.png"/>
     </castle>
   </castles>
 </castle_catalog>
