@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE castle_catalog [
-	<!ENTITY asenova-krepost SYSTEM ".images/asenova-krepost.png" NDATA png>
-  <!ENTITY ovech SYSTEM ".images/ovech.png" NDATA png>
-  <!ENTITY anevo-kale SYSTEM ".images/anevo-kale.png" NDATA png>
-  <!ENTITY traqnovi-vrata SYSTEM ".images/traqnovi-vrata.png" NDATA png>
-  <!ENTITY baba-vida SYSTEM ".images/baba-vida.png" NDATA png>
-  <!ENTITY hisarq SYSTEM ".images/hisarq.png" NDATA png>
-  <!ENTITY samuilova-krepost SYSTEM ".images/samuilova-krepost.png" NDATA png>
-  <!ENTITY vishegrad SYSTEM ".images/vishegrad.png" NDATA png>
+	<!ENTITY asenova-krepost SYSTEM ".images/asenova-krepost.png" NDATA PNG>
+  <!ENTITY ovech SYSTEM ".images/ovech.png" NDATA PNG>
+  <!ENTITY anevo-kale SYSTEM ".images/anevo-kale.png" NDATA PNG>
+  <!ENTITY traqnovi-vrata SYSTEM ".images/traqnovi-vrata.png" NDATA PNG>
+  <!ENTITY baba-vida SYSTEM ".images/baba-vida.png" NDATA PNG>
+  <!ENTITY hisarq SYSTEM ".images/hisarq.png" NDATA PNG>
+  <!ENTITY samuilova-krepost SYSTEM ".images/samuilova-krepost.png" NDATA PNG>
+  <!ENTITY vishegrad SYSTEM ".images/vishegrad.png" NDATA PNG>
 ]>
 
 <castle_catalog
@@ -92,7 +92,7 @@
     </castle>
 
     <castle id="C2">
-      <title>ovech</title>
+      <title>Овеч</title>
       <region>E</region>
       <type id="T1"/>
       <condition>Частично реставрирана</condition>
@@ -136,7 +136,7 @@
     </castle>
 
     <castle id="C6">
-      <title>hisarq</title>
+      <title>Хисаря</title>
       <region>N</region>
       <type id="T2"/>
       <condition>Частично запазена</condition>
@@ -158,7 +158,7 @@
     </castle>
 
     <castle id="C8">
-      <title>vishegrad</title>
+      <title>Вишеград</title>
       <region>S</region>
       <type id="T3"/>
       <condition>Частично запазена</condition>
