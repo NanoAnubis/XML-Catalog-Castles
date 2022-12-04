@@ -13,7 +13,7 @@
     <xs:field xpath="region"/>
     <xs:field xpath="type/@id"/>
   </xs:unique>
-<xs:element>
+</xs:element>
 
 <xs:element name="castle_catalog">
   <xs:complexType>
