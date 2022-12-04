@@ -6,6 +6,7 @@
 
 
 
+<!--
 <xs:element name="unique">
   <xs:unique name="castleUnique">
     <xs:selector xpath="castle"/>
@@ -13,7 +14,8 @@
     <xs:field xpath="region"/>
     <xs:field xpath="type/@id"/>
   </xs:unique>
-<xs:element>
+</xs:element>
+-->
 
 <xs:element name="castle_catalog">
   <xs:complexType>
