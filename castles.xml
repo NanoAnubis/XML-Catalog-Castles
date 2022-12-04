@@ -1,3 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="./castles.xsd">
+
+  <regions>
+    <region>
+      <name></name>
+      <id_region></id_region>
+    </region>
+  </regions>
+
+  <types>
+    <type>
+      <name></name>
+      <id_type></id_type>
+    </type>
+  </types>
+
+  <castles>
+    <castle>
+      <title></title>
+      <region id=""></region>
+      <type id=""></type>
+      <condition></condition>
+      <description></description>
+      <image href=""></image>
+    </castle>
+  </castles>
 </catalog>
