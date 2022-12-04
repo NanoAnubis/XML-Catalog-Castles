@@ -1,21 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-  targetNamespace="https://www.castles-catalog.com/"
-  xmlns="https://www.castles-catalog.com/"
-  elementFormDefault="qualified">
-
-
-
-<!--
-<xs:element name="unique">
-  <xs:unique name="castleUnique">
-    <xs:selector xpath="castle"/>
-    <xs:field xpath="title"/>
-    <xs:field xpath="region"/>
-    <xs:field xpath="type/@id"/>
-  </xs:unique>
-</xs:element>
--->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
 <xs:element name="castle_catalog">
   <xs:complexType>
@@ -26,23 +10,32 @@
     </xs:sequence>
   </xs:complexType>
 
+  <xs:unique name="castleUnique">
+    <xs:selector xpath="castles/castle"/>
+    <xs:field xpath="title"/>
+    <xs:field xpath="region"/>
+    <xs:field xpath="type/@id"/>
+  </xs:unique>
+
   <xs:key name="key_type">
-    <xs:selector xpath=".//type"/>
+    <xs:selector xpath="types/type"/>
     <xs:field xpath="id"/>
   </xs:key>
   <xs:keyref name="ref_type" refer="key_type">
-    <xs:selector xpath=".//castle" />
+    <xs:selector xpath="castles/castle"/>
     <xs:field xpath="type/@id" />
   </xs:keyref>
 
   <xs:key name="key_region">
-    <xs:selector xpath=".//region"/>
+    <xs:selector xpath="regions/region"/>
     <xs:field xpath="id"/>
   </xs:key>
+  
   <xs:keyref name="ref_region" refer="key_region">
-    <xs:selector xpath=".//castle"/>
+    <xs:selector xpath="castles/castle"/>
     <xs:field xpath="region"/>
   </xs:keyref>
+  
 </xs:element>
 
 <xs:element name="regions">
@@ -140,6 +133,5 @@
     <xs:attribute name="href" type="xs:ENTITY" use="required"/>
   </xs:complexType>
 </xs:element>
-
 
 </xs:schema>

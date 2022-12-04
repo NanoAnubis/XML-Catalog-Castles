@@ -1,83 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE castle_catalog [
-	<!ENTITY asenova-krepost SYSTEM ".images/asenova-krepost.png" NDATA PNG>
-  <!ENTITY ovech SYSTEM ".images/ovech.png" NDATA PNG>
-  <!ENTITY anevo-kale SYSTEM ".images/anevo-kale.png" NDATA PNG>
-  <!ENTITY traqnovi-vrata SYSTEM ".images/traqnovi-vrata.png" NDATA PNG>
-  <!ENTITY baba-vida SYSTEM ".images/baba-vida.png" NDATA PNG>
-  <!ENTITY hisarq SYSTEM ".images/hisarq.png" NDATA PNG>
-  <!ENTITY samuilova-krepost SYSTEM ".images/samuilova-krepost.png" NDATA PNG>
-  <!ENTITY vishegrad SYSTEM ".images/vishegrad.png" NDATA PNG>
+	<!ENTITY asenova-krepost SYSTEM ".images/asenova-krepost.png" NDATA png>
+  <!ENTITY ovech SYSTEM ".images/ovech.png" NDATA png>
+  <!ENTITY anevo-kale SYSTEM ".images/anevo-kale.png" NDATA png>
+  <!ENTITY traqnovi-vrata SYSTEM ".images/traqnovi-vrata.png" NDATA png>
+  <!ENTITY baba-vida SYSTEM ".images/baba-vida.png" NDATA png>
+  <!ENTITY hisarq SYSTEM ".images/hisarq.png" NDATA png>
+  <!ENTITY samuilova-krepost SYSTEM ".images/samuilova-krepost.png" NDATA png>
+  <!ENTITY vishegrad SYSTEM ".images/vishegrad.png" NDATA png>
+	<!NOTATION png PUBLIC "PNG">
 ]>
 
 <castle_catalog
-  xmlns="https://www.castles-catalog.com/"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="./castles.xsd">
+  xsi:noNamespaceSchemaLocation="castles.xsd">
 
-  <rgs:regions xmlns:rgs="https://www.castles-catalog.com/">
-    <rgs:region>
-      <rgs:name>Централна България</rgs:name>
-      <rgs:id>CT</rgs:id>
-    </rgs:region>
+  <regions>
+    <region>
+      <name>Централна България</name>
+      <id>CT</id>
+    </region>
 
-    <rgs:region>
-      <rgs:name>Северна България</rgs:name>
-      <rgs:id>N</rgs:id>
-    </rgs:region>
+    <region>
+      <name>Северна България</name>
+      <id>N</id>
+    </region>
 
-    <rgs:region>
-      <rgs:name>Североизточна България</rgs:name>
-      <rgs:id>NE</rgs:id>
-    </rgs:region>
+    <region>
+      <name>Североизточна България</name>
+      <id>NE</id>
+    </region>
 
-    <rgs:region>
-      <rgs:name>Източна България</rgs:name>
-      <rgs:id>E</rgs:id>
-    </rgs:region>
+    <region>
+      <name>Източна България</name>
+      <id>E</id>
+    </region>
 
-    <rgs:region>
-      <rgs:name>Югоизточна България</rgs:name>
-      <rgs:id>SE</rgs:id>
-    </rgs:region>
+    <region>
+      <name>Югоизточна България</name>
+      <id>SE</id>
+    </region>
 
-    <rgs:region>
-      <rgs:name>Южна България</rgs:name>
-      <rgs:id>S</rgs:id>
-    </rgs:region>
+    <region>
+      <name>Южна България</name>
+      <id>S</id>
+    </region>
 
-    <rgs:region>
-      <rgs:name>Югозападна България</rgs:name>
-      <rgs:id>SW</rgs:id>
-    </rgs:region>
+    <region>
+      <name>Югозападна България</name>
+      <id>SW</id>
+    </region>
 
-    <rgs:region>
-      <rgs:name>Западна България</rgs:name>
-      <rgs:id>W</rgs:id>
-    </rgs:region>
+    <region>
+      <name>Западна България</name>
+      <id>W</id>
+    </region>
 
-    <rgs:region>
-      <rgs:name>Северозападна България</rgs:name>
-      <rgs:id>NW</rgs:id>
-    </rgs:region>
-  </rgs:regions>
+    <region>
+      <name>Северозападна България</name>
+      <id>NW</id>
+    </region>
+  </regions>
 
-  <tps:types xmlns:tps="https://www.castles-catalog.com/">
-    <tps:type>
-      <tps:name>Българска</tps:name>
-      <tps:id>T1</tps:id>
-    </tps:type>
+  <types>
+    <type>
+      <name>Българска</name>
+      <id>T1</id>
+    </type>
 
-    <tps:type>
-      <tps:name>Римска</tps:name>
-      <tps:id>T2</tps:id>
-    </tps:type>
+    <type>
+      <name>Римска</name>
+      <id>T2</id>
+    </type>
 
-    <tps:type>
-      <tps:name>Тракийска</tps:name>
-      <tps:id>T3</tps:id>
-    </tps:type>
-  </tps:types>
+    <type>
+      <name>Тракийска</name>
+      <id>T3</id>
+    </type>
+  </types>
 
   <castles>
     <castle id="C1">
