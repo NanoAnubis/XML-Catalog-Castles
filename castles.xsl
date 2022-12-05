@@ -27,14 +27,14 @@
 							<xsl:sort select="./condition" order="ascending"/>
 							<div id="" class="castle-container">
 								<xsl:attribute name="id"><xsl:value-of select="@id"/></xsl:attribute>
-								<xsl:variable name="castle_type">T3</xsl:variable>
+								<xsl:variable name="castle_type" select="./type/@id"/>
 								
 								<h2 class="castle-title"><xsl:value-of select="title"/></h2>							
 								<img class="castle-image">
-									<xsl:attribute name="src"><xsl:value-of select="image/@href"/></xsl:attribute>
+									<xsl:attribute name="src">{unparsed-entity-uri(<xsl:value-of select="image/@href"/>)}</xsl:attribute>
 								</img>
 								<h3 class="castle-type">Тип на крепостта -
-									<xsl:value-of select="/castle_catalog/types/type[type_id=$castle_type]/type_name/text()"/>
+									<xsl:value-of select="$castle_type_selector"/>
 								</h3>
 								<h4 class="castle-region">Намира се в
 									<xsl:value-of select="condition"/>
