@@ -28,6 +28,7 @@
 							<div id="" class="castle-container">
 								<xsl:attribute name="id"><xsl:value-of select="@id"/></xsl:attribute>
 								<xsl:variable name="castle_type" select="./type/@id"/>
+								<xsl:variable name="castle_region" select="./region/text()"/>
 								
 								<h2 class="castle-title"><xsl:value-of select="title"/></h2>							
 								<img class="castle-image">
@@ -36,10 +37,12 @@
 									</xsl:attribute>
 								</img>
 								<h3 class="castle-type">Тип на крепостта -
-									<xsl:value-of select="/castle_catalog/types/type[type_id='$castle-type']/type_name/text()"/>
+									<xsl:value-of 
+									select="/castle_catalog/types/type[type_id='$castle-type']/type_name/text()"/>
 								</h3>
 								<h4 class="castle-region">Намира се в
-									<xsl:value-of select="condition"/>
+									<xsl:value-of 
+									select="/castle_catalog/regions/region[region_id='$castle_region']/region_name/text()"/>
 								</h4>
 								<p class="castle-condition"><xsl:value-of select="condition"/></p>		   
 								<p class="castle-description"><xsl:value-of select="description"/></p>					
