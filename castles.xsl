@@ -4,21 +4,22 @@
 		<html>
 			<head>
 				<title>Catalog of castles in Bulgaria</title>
-				<link rel="stylesheet" href="./castles.css" type="text/css"/>
+				<link rel="stylesheet" type="text/css" href="./castles.css"/>
+				<script type="text/javascript" src="./castles.js"></script>
 			</head>
 			<body>
-				<div class="container">
-					<h1 class="catalog-title">Catalog of castles in Bulgaria</h1>
+				<h1 class="catalog-title">Catalog of castles in Bulgaria</h1>
+				<div class="container">					
 					<label for="sortBy" class="sort-by-label">Sort by:</label>
-					<select name="sortBy" id="sortBy">
-						<option value="typeASC">Type (ascending)</option>
-						<option value="typeDSC">Type (descending)</option>
-						<option value="regionASC">Region (ascending)</option>
-						<option value="regionDSC">Region (descending)</option>
-						<option value="conditionASC">Condition (ascending)</option>					
-						<option value="conditionDSC">Condition (descending)</option>
-						<option value="nameASC">Name (ascending)</option>
-						<option value="nameDSC">Name (descending)</option>
+					<select name="sortBy" id="sortBy" onchange="sortCastles(this);">
+						<option value="type_ASC">Type (ascending)</option>
+						<option value="type_DSC">Type (descending)</option>
+						<option value="region_ASC">Region (ascending)</option>
+						<option value="region_DSC">Region (descending)</option>
+						<option value="condition_ASC">Condition (ascending)</option>					
+						<option value="condition_DSC">Condition (descending)</option>
+						<option value="title_ASC">Title (ascending)</option>
+						<option value="title_DSC">Title (descending)</option>
 					</select>				
 					<div class="catalog-container">
 						<xsl:for-each select="castle_catalog/castles/castle">
