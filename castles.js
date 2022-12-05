@@ -30,20 +30,15 @@ function sortCastles(sender) {
 		if (sortByDirection === "DSC") {
 			castles[i].c_sort_direction *= -1;
 		}
-		// castles[i].c_title     = sortingProps[0];
-		// castles[i].c_type      = sortingProps[1];
-		// castles[i].c_region    = sortingProps[2];
-		// castles[i].c_condition = sortingProps[3];
 	}
 	
 	var castlesCatalog = document.getElementById("catalogContainer");
-	debugger;
 	var castlesArray = Array.prototype.slice.call(castles);
 	castlesArray.sort(customCompare);
 	
-	castlesCatalog.innerHTML = '';
-	castlesArray.forEach(function () {
-		castlesCatalog.appendChild(this);
+	castlesArray.forEach(function (item) {
+		castlesCatalog.removeChild(item);
+		castlesCatalog.appendChild(item);
 	});
 }
 
