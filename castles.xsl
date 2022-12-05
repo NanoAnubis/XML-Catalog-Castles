@@ -36,13 +36,13 @@
 										<xsl:value-of select="unparsed-entity-uri(image/@href)"/>
 									</xsl:attribute>
 								</img>
-								<h3 class="castle-type">Тип на крепостта -
+								<h3 class="castle-type">Тип на крепостта:
 									<xsl:value-of 
-									select="/castle_catalog/types/type[type_id='$castle-type']/type_name/text()"/>
+									select="/castle_catalog/types/type[type_id=$castle_type]/type_name/text()"/>
 								</h3>
-								<h4 class="castle-region">Намира се в
+								<h4 class="castle-region">Местонахождение:
 									<xsl:value-of 
-									select="/castle_catalog/regions/region[region_id='$castle_region']/region_name/text()"/>
+									select="/castle_catalog/regions/region[region_id=$castle_region]/region_name/text()"/>
 								</h4>
 								<p class="castle-condition"><xsl:value-of select="condition"/></p>		   
 								<p class="castle-description"><xsl:value-of select="description"/></p>					
