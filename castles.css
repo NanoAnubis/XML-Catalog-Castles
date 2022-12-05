@@ -1,6 +1,6 @@
 body {
-  background-color: rgb(160, 190, 158);
-
+  background-color: #81D0D0;
+  font-family: "Arial";
 }
 
 .container {
@@ -11,6 +11,9 @@ body {
   margin-right: 125px;
   border-radius: 20px;
   padding: 20px;
+  padding-right: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .catalog-title {
@@ -20,6 +23,7 @@ body {
 }
 
 .sort-by-label {
+  font-weight: bold;
   position: absolute;
   right: 350px;
 }
@@ -42,7 +46,6 @@ option {
 }
 
 .castle-title {
-
 }
 
 .castle-image {
@@ -50,11 +53,12 @@ option {
   border-radius: 5px;
   height: 250px;
   width: 400px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .castle-type, .castle-region, .castle-condition, .castle-description {
   position: relative;
-  top: 20px;
+  top: 3%;
   left: 10px;
 }
 
@@ -65,7 +69,12 @@ option {
 }
 
 .castle-condition {
+  font-style: italic;
+  font-weight: bold;
 }
 
 .castle-description {
+  text-indent: 40px;
+  word-spacing: 0.5px;
+  text-align: justify;
 }
