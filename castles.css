@@ -33,19 +33,15 @@ body {
   right: 180px;
 }
 
-option {
-}
-
 .catalog-container {
   display: flex;
   flex-direction: column;
 }
 
-.castle-container {
-
-}
 
 .castle-title {
+  position: relative;
+  top: 10px;
 }
 
 .castle-image {
@@ -63,10 +59,8 @@ option {
   padding-right: 20px;
 }
 
-.castle-type {
-}
-
-.castle-region {
+.castle-type, .castle-region, .castle-condition {
+  left: 30px;
 }
 
 .castle-condition {
