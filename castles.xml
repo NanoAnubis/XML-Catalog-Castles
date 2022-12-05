@@ -2,14 +2,14 @@
 <?xml-stylesheet type="text/xsl" version="2.0" href="castles.xsl"?>
 
 <!DOCTYPE castle_catalog [
-	<!ENTITY asenova-krepost SYSTEM ".images/asenova-krepost.jpg" NDATA jpg>
-	<!ENTITY ovech SYSTEM ".images/ovech.jpg" NDATA jpg>
-	<!ENTITY anevo-kale SYSTEM ".images/anevo-kale.jpg" NDATA jpg>
-	<!ENTITY traqnovi-vrata SYSTEM ".images/traqnovi-vrata.jpg" NDATA jpg>
-	<!ENTITY baba-vida SYSTEM ".images/baba-vida.jpg" NDATA jpg>
-	<!ENTITY hisarq SYSTEM ".images/hisarq.jpg" NDATA jpg>
-	<!ENTITY samuilova-krepost SYSTEM ".images/samuilova-krepost.jpg" NDATA jpg>
-	<!ENTITY vishegrad SYSTEM ".images/vishegrad.jpg" NDATA jpg>
+	<!ENTITY asenova-krepost SYSTEM "./images/asenova-krepost.jpg" NDATA jpg>
+	<!ENTITY ovech SYSTEM "./images/ovech.jpg" NDATA jpg>
+	<!ENTITY anevo-kale SYSTEM "./images/anevo-kale.jpg" NDATA jpg>
+	<!ENTITY traqnovi-vrata SYSTEM "./images/traqnovi-vrata.jpg" NDATA jpg>
+	<!ENTITY baba-vida SYSTEM "./images/baba-vida.jpg" NDATA jpg>
+	<!ENTITY hisarq SYSTEM "./images/hisarq.jpg" NDATA jpg>
+	<!ENTITY samuilova-krepost SYSTEM "./images/samuilova-krepost.jpg" NDATA jpg>
+	<!ENTITY vishegrad SYSTEM "./images/vishegrad.jpg" NDATA jpg>
 	<!NOTATION jpg PUBLIC "JPG">
 ]>
 

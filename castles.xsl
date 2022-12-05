@@ -31,10 +31,12 @@
 								
 								<h2 class="castle-title"><xsl:value-of select="title"/></h2>							
 								<img class="castle-image">
-									<xsl:attribute name="src">{unparsed-entity-uri(<xsl:value-of select="image/@href"/>)}</xsl:attribute>
+									<xsl:attribute name="src">
+										<xsl:value-of select="unparsed-entity-uri(image/@href)"/>
+									</xsl:attribute>
 								</img>
 								<h3 class="castle-type">Тип на крепостта -
-									<xsl:value-of select="$castle_type_selector"/>
+									<xsl:value-of select="/castle_catalog/types/type[type_id='$castle-type']/type_name/text()"/>
 								</h3>
 								<h4 class="castle-region">Намира се в
 									<xsl:value-of select="condition"/>
