@@ -1,28 +1,61 @@
+body {
+  background-color: rgb(160, 190, 158);
+
+}
+
 .container {
+  background-color: rgb(220, 220, 220);
+  margin-top: 75px;
+  margin-bottom: 75px;
+  margin-left: 125px;
+  margin-right: 125px;
+  border-radius: 20px;
+  padding: 20px;
 }
 
 .catalog-title {
+  position: relative;
+  top: 35px;
+  text-align: center;
 }
 
 .sort-by-label {
+  position: absolute;
+  right: 350px;
 }
 
-#sortBy { 
+#sortBy {
+  position: absolute;
+  right: 180px;
 }
 
 option {
 }
 
 .catalog-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .castle-container {
+
 }
 
 .castle-title {
+
 }
 
 .castle-image {
+  float: left;
+  border-radius: 5px;
+  height: 250px;
+  width: 400px;
+}
+
+.castle-type, .castle-region, .castle-condition, .castle-description {
+  position: relative;
+  top: 20px;
+  left: 10px;
 }
 
 .castle-type {
