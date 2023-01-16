@@ -12,6 +12,27 @@
 	<!ENTITY vishegrad SYSTEM "./images/vishegrad.jpg" NDATA jpg>
 	<!NOTATION jpg PUBLIC "JPG">
 	<!NOTATION png PUBLIC "PNG">
+	<!ELEMENT castle_catalog ANY>
+	<!ATTLIST castle_catalog xmlns:xsi CDATA #REQUIRED>
+	<!ATTLIST castle_catalog xsi:noNamespaceSchemaLocation CDATA #REQUIRED>
+  <!ELEMENT regions ANY>
+  <!ELEMENT region ANY>
+  <!ELEMENT region_name ANY>
+  <!ELEMENT region_id ANY>
+  <!ELEMENT types ANY>
+  <!ELEMENT type ANY>
+  <!ELEMENT type_name ANY>
+  <!ELEMENT type_id ANY>
+	<!ELEMENT castles ANY>
+	<!ELEMENT castle ANY>
+	<!ATTLIST castle id CDATA #REQUIRED>
+	<!ATTLIST type id CDATA #IMPLIED>
+	<!ATTLIST image href CDATA #REQUIRED>
+	<!ELEMENT title ANY>
+	<!ELEMENT condition ANY>
+	<!ELEMENT description ANY>
+	<!ELEMENT image ANY>
+
 ]>
 
 <castle_catalog
